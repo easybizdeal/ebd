@@ -6,10 +6,11 @@ import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+import os
+
 class Config:
     SECRET_KEY = 'your_secret_key_here'
-    # Store DB in /tmp for Render compatibility
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join('/tmp', 'easybiz.db')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Hostinger SMTP
