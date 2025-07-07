@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Your Easy Biz Deal Account</title>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
+
+  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="padding: 40px 0;">
+    <tr>
+      <td align="center">
+        <table cellpadding="0" cellspacing="0" border="0" width="600" style="background: #ffffff; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.05); padding: 40px;">
+          <tr>
+            <td align="center" style="padding-bottom: 20px;">
+              <h2 style="font-size: 26px; color: #0066cc; margin: 0;">Welcome to Easy Biz Deal 👋</h2>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 16px; color: #333333; line-height: 1.6; padding-bottom: 20px;">
+              <p style="margin: 0 0 10px;">Hi {{ user.first_name }},</p>
+              <p style="margin: 0 0 10px;">Thanks for signing up! To activate your account and start using our services, please verify your email address:</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 0;">
+              <a href="{{ verification_link }}"
+                style="background-color: #0066cc; color: #ffffff !important; padding: 14px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 6px; display: inline-block;">
+                Verify My Email
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 14px; color: #333333; line-height: 1.6; padding-bottom: 20px;">
+              <p style="margin: 0 0 10px;">If the button doesn’t work, you can copy and paste the link below into your browser:</p>
+              <p style="word-break: break-all; color: #0066cc;">{{ verification_link }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 14px; color: #333333; line-height: 1.6; padding-top: 20px;">
+              <p style="margin: 0;">Best regards,<br /><strong>Easy Biz Deal Team</strong><br />
+                <a href="https://easybizdeal.com" style="color: #0066cc; text-decoration: none;">https://easybizdeal.com</a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-top: 1px solid #dddddd; padding-top: 20px; font-size: 12px; color: #777777; line-height: 1.5;">
+              <p style="margin: 0;">You’re receiving this email because you recently created an account on Easy Biz Deal. If this wasn’t you, feel free to ignore this message.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

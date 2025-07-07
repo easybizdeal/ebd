@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head_extra %}
+  <link rel="icon" href="{{ url_for('static', filename='icons/favicon.png') }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% endblock %}
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="keywords"
+        content="Easy Biz Deal, Business automation platform, Growth tools for startups, Smart business tools, Automate outreach, Lead management, LinkedIn automation, Email automation, Web scraping automation, Google Maps lead extractor, Email Finder AI, Traffic reports automation, One‑click signup, Tool selection dashboard, Lead upload & customization, Run & track campaigns, Real‑time analytics, Hire world‑class freelancers, Verified experts, Secure in‑app messaging, Fast delivery, Developer marketplace, Marketing freelancers, Virtual assistants, Data enrichment, Lead generation automation, Campaign analytics, CRM integration, Personalization, Drip campaigns, Funnel automation, Social media automation, Content scheduling, Growth hacking, Sales pipeline automation, A/B testing, Email list management, API integration, Task automation, Workflow optimization, No-code automation, Remote workforce management, Project collaboration, Talent sourcing, Performance tracking">
+  <meta name="description"
+        content="Easy Biz Deal is the all‑in‑one business automation platform: streamline LinkedIn, email, web and lead workflows, automate campaigns, and hire vetted freelancers instantly.">
+
+  <title>Easy Biz Deal – Run & Grow Your Business</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  {% include 'header.html' %}
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">Smart Tools to Grow Your Business</h1>
+      <p class="hero-subtitle">Automate outreach, manage leads, and boost efficiency with our ready-to-run tools and expert freelancers.</p>
+      <div class="hero-buttons">
+        <a href="/signup" class="btn btn-primary">Get Started Free</a>
+        <a href="/hire" class="btn btn-outline">Hire Freelancer</a>
+      </div>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="var(--color-bg)" />
+  </svg>
+</section>
+
+<!-- SECTION 2 -->
+<section class="tools-showcase">
+  <div class="container">
+    <h2 class="tools-showcase__title">Discover Our Powerful Automation Suite</h2>
+    <div class="tools-showcase__grid">
+      <article class="card">
+        <h3>LinkedIn Automation</h3>
+        <p>Automate LinkedIn outreach, connections, and follow-ups with intelligent sequences.</p>
+        <a href="/tools/linkedin" class="card__btn">Explore ↗</a>
+      </article>
+      <article class="card">
+        <h3>AI Assistants</h3>
+        <p>Chatbots that engage and support users 24/7 with personalized conversations.</p>
+        <a href="/tools/Conversational AI Assistants" class="card__btn">Explore ↗</a>
+      </article>
+      <article class="card">
+        <h3>Web Automation</h3>
+        <p>Scrape data, fill forms, and trigger actions across any website automatically.</p>
+        <a href="/tools/web" class="card__btn">Explore ↗</a>
+      </article>
+      <article class="card">
+        <h3>Email Tools</h3>
+        <p>Send automated, personalized emails that engage, convert, and track performance.</p>
+        <a href="/tools/maps" class="card__btn">Explore ↗</a>
+      </article>
+      <article class="card">
+        <h3>Email Finder AI</h3>
+        <p>Locate verified professional emails from names, domains, or profiles instantly.</p>
+        <a href="/tools/email-finder" class="card__btn">Explore ↗</a>
+      </article>
+      <article class="card">
+        <h3>Traffic Reports</h3>
+        <p>Analyze and automate weekly traffic reports to understand user behavior.</p>
+        <a href="/tools/web-traffic" class="card__btn">Explore ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="tools-steps-modern spaced-above">
+  <div class="container">
+    <h2 class="tools-steps-title">How Our Tools Work</h2>
+    <div class="tools-steps-grid">
+      <div class="tools-step">
+        <div class="tools-step-number">01</div>
+        <h3>Create Account</h3>
+        <p>Get started instantly with one-click signup. No credit card required.</p>
+      </div>
+      <div class="tools-step">
+        <div class="tools-step-number">02</div>
+        <h3>Select Tool</h3>
+        <p>Choose LinkedIn messaging, email automation, or scraping tools from your dashboard.</p>
+      </div>
+      <div class="tools-step">
+        <div class="tools-step-number">03</div>
+        <h3>Upload & Customize</h3>
+        <p>Upload your leads, add a message, and personalize everything to fit your workflow.</p>
+      </div>
+      <div class="tools-step">
+        <div class="tools-step-number">04</div>
+        <h3>Run & Track</h3>
+        <p>Click run. Let automation do the work while you track everything in real-time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="freelancer-hire">
+  <div class="container">
+    <!-- Text and Features -->
+    <div class="freelancer-hire__content">
+      <h2>Hire Our Experts in Minutes</h2>
+      <p>Tell us what you need — our team will review your requirements and respond within one hour with the right solution from our expert departments. Fast, reliable, and tailored to your project.</p>
+      <a href="/hire" class="btn btn-primary">Get Started</a>
+      <ul class="freelancer-hire__features">
+        <li>
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>
+          <span>Verified Experts</span>
+        </li>
+        <li>
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14l4-4h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></svg>
+          <span>Secure Chat</span>
+        </li>
+        <li>
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M21 10H7l5-5L11 3l-8 8 8 8 1-1-5-5h14z"/></svg>
+          <span>Fast Delivery</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Avatar Showcase -->
+    <div class="freelancer-hire__visual">
+      <div class="avatars">
+        <img src="/static/images/Website Development Company.png" alt="Website Development Company" />
+        <img src="/static/images/Digital Marketing Agency.png" alt="Digital Marketing Agency" />
+        <img src="/static/images/Data Entry Services Online.png" alt="Data Entry Services Online" />
+        <img src="/static/images/Web Scraping Automation.png" alt="Web Scraping Automation" />
+        <span class="avatar-count">+30 Freelancers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▸ MEET OUR TOP FREELANCERS
+–––––––––––––––––––––––––––––––––––––––––––––– -->
+<section class="section-talent" id="top-freelancers">
+  <div class="container">
+    <h2 class="section-title">Meet Our Top Freelancers by Department</h2>
+
+    <div class="talent-grid">
+      <!-- Department Card -->
+      <div class="talent-card blue">
+        <h3 class="dept-name">Automation Services</h3>
+        <p class="dept-desc">Tech solutions, from smart chatbots to scalable platforms built by pros.</p>
+        <ul class="dept-points">
+          <li>Custom & WordPress builds</li>
+          <li>Development & Maintenance</li>
+          <li>Full-stack expert developers</li>
+        </ul>
+        <div class="dept-profile">
+          <img src="{{ url_for('static', filename='images/Anik.jpg') }}" alt="Anik Choudhury">
+          <div class="profile-info">
+            <strong>Anik Choudhury</strong>
+            <span>Full-Stack Developer · 3 yrs</span>
+          </div>
+        </div>
+        <a href="/departments/web-development" class="btn-outline blue">View Department</a>
+      </div>
+
+      <!-- Department Card -->
+      <div class="talent-card yellow">
+        <h3 class="dept-name">Digital Marketing</h3>
+        <p class="dept-desc">From SEO to social—data-driven strategies that scale your brand online.</p>
+        <ul class="dept-points">
+          <li>SEO & content strategy</li>
+          <li>Paid ads & campaigns</li>
+          <li>Influencer & social media</li>
+        </ul>
+        <div class="dept-profile">
+          <img src="{{ url_for('static', filename='images/Habibur Rahman.jpg') }}" alt="Habibur Rahman">
+          <div class="profile-info">
+            <strong>Habibur Rahman</strong>
+            <span>Digital Marketer · 7 yrs</span>
+          </div>
+        </div>
+        <a href="/departments/digital-marketing" class="btn-outline yellow">View Department</a>
+      </div>
+
+      <!-- Department Card -->
+      <div class="talent-card blue">
+        <h3 class="dept-name">Website Development</h3>
+        <p class="dept-desc">Modern, responsive sites and robust platforms—from concept to code.</p>
+        <ul class="dept-points">
+          <li>Custom & WordPress builds</li>
+          <li>Website redesign & maintenance</li>
+          <li>Full-stack expert developers</li>
+        </ul>
+        <div class="dept-profile">
+          <img src="{{ url_for('static', filename='images/puspo.jpg') }}" alt="Puspojit Roy">
+          <div class="profile-info">
+            <strong>Puspojit Roy</strong>
+            <span>Full-Stack Developer · 8 yrs</span>
+          </div>
+        </div>
+        <a href="/departments/web-development" class="btn-outline blue">View Department</a>
+      </div>
+
+      <!-- Department Card -->
+      <div class="talent-card green">
+        <h3 class="dept-name">Data Management</h3>
+        <p class="dept-desc">Accuracy and organization, from virtual support to clean CRM pipelines.</p>
+        <ul class="dept-points">
+          <li>Virtual assistance & CRM</li>
+          <li>File conversions & reports</li>
+          <li>Manual workload handling</li>
+        </ul>
+        <div class="dept-profile">
+          <img src="{{ url_for('static', filename='images/Khondoker Rukaiya Siddiqa.jpg') }}" alt="Khondoker Rukaiya Siddiqa">
+          <div class="profile-info">
+            <strong>Khondoker Rukaiya Siddiqa</strong>
+            <span>CRM Executive · 6 yrs</span>
+          </div>
+        </div>
+        <a href="/departments/data-management" class="btn-outline green">View Department</a>
+      </div>
+
+      <!-- Department Card -->
+      <div class="talent-card gray">
+        <h3 class="dept-name">Creative & Design</h3>
+        <p class="dept-desc">Powerful visuals and branding, built with design precision.</p>
+        <ul class="dept-points">
+          <li>Logo & visual identity</li>
+          <li>UI/UX design</li>
+          <li>Presentation & print materials</li>
+        </ul>
+        <div class="dept-profile">
+          <img src="{{ url_for('static', filename='images/Mohidul.jpg') }}" alt="Mohidul Islam Reyad">
+          <div class="profile-info">
+            <strong>Mohidul Islam Reyad</strong>
+            <span>UI/UX Designer · 4 yrs</span>
+          </div>
+        </div>
+        <a href="/departments/design" class="btn-outline gray">View Department</a>
+      </div>
+      <!-- Department Card -->
+      <div class="talent-card green">
+        <h3 class="dept-name">Lead Generation</h3>
+        <p class="dept-desc">We deliver targeted lead lists that connect you with your ideal clients.</p>
+        <ul class="dept-points">
+          <li>Connect with decision-makers</li>
+          <li>Generate qualified B2B leads.</li>
+          <li>Title-Industry-Geo targeted</li>
+        </ul>
+        <div class="dept-profile">
+          <img src="{{ url_for('static', filename='images/Amin.jpg') }}" alt="Md Al Amin">
+          <div class="profile-info">
+            <strong>Md Al Amin</strong>
+            <span>Lead Generation Expert · 6 yrs</span>
+          </div>
+        </div>
+        <a href="/departments/data-management" class="btn-outline green">View Department</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+<!-- Why Easy Biz Deal -->
+ <!-- SECTION 6 -->
+<section style="padding: 60px 20px;">
+  <div class="container" style="max-width: 1000px; margin: auto;">
+    <h2 style="text-align: center; font-size: 2rem; color: #111827; margin-bottom: 40px;">Why Easy Biz Deal?</h2>
+    <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; list-style: none; padding: 0;">
+      <li><strong>✅ Ready-to-use tools:</strong> No setup needed—start running immediately.</li>
+      <li><strong>⚡ Fast results:</strong> Automate daily tasks and boost outreach overnight.</li>
+      <li><strong>💼 Freelance support:</strong> Hire expert virtual assistants and developers anytime.</li>
+      <li><strong>📊 Smart dashboard:</strong> Track progress, view reports, and manage activity live.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+ <!-- SECTION 7 -->
+<section style="padding: 60px 20px; text-align: center; background: #d1def8; color: rgb(242, 152, 79);">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">Start Automating Today</h2>
+  <p style="font-size: 1.1rem; margin-bottom: 30px;">Join hundreds of professionals using Easy Biz Deal to scale smarter, not harder.</p>
+  <a href="/signup" style="padding: 12px 30px; background: #10b981; color: white; text-decoration: none; border-radius: 30px;">Create Your Free Account</a>
+</section>
+
+{% block footer %}
+  {% include 'footer.html' %}
+{% endblock %}

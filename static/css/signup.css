@@ -1,0 +1,158 @@
+/* ===== Signup Page Style ===== */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #def995;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a202c;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.signup-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  transform: scale(1.1);
+  vertical-align: middle;
+}
+
+.signup-form button {
+  width: 100%;
+  background-color: #0066cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #004c99;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.form-footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+}
+
+/* ===== Select2 Fix ===== */
+.select2-container {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  height: 44px !important;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #333;
+  line-height: normal !important;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+  right: 10px;
+}
+
+/* ===== Mobile Friendly ===== */
+@media screen and (max-width: 600px) {
+  .signup-form {
+    margin: 20px 15px;
+    padding: 25px 20px;
+  }
+
+  .signup-form h2 {
+    font-size: 22px;
+  }
+
+  .signup-form input,
+  .signup-form select {
+    font-size: 14px;
+  }
+
+  .signup-form button {
+    font-size: 15px;
+  }
+
+  .password-toggle {
+    top: 36px;
+  }
+}
